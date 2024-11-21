@@ -1,0 +1,104 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+  }
+
+  /* Carousel Styles */
+
+  .carousel-wrapper {
+    display: flex;
+    align-items: center;
+    max-width: 700px;
+    width: 100%;
+  }
+  
+  .carousel {
+    display: flex;
+    overflow: hidden;
+    flex-grow: 1;
+    border-radius: 10px;
+    position: relative;
+  }
+  
+  .carousel-track {
+    display: flex;
+    transition: transform 0.3s ease;
+  }
+  
+  .carousel-item {
+    flex: 1 0 100%;
+    padding: 10px;
+    text-align: center;
+    background-color: #fff;
+  }
+  
+  .carousel-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .carousel-item p {
+    margin-top: 10px;
+    font-size: 1rem;
+  }
+  
+  /* Carousel Navigation buttons */
+
+  .prev, .next {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+  
+  .prev, .next {
+    flex-shrink: 0;
+    z-index: 10;
+  }
+  
+  .prev {
+    margin-right: 10px;
+  }
+  
+  .next {
+    margin-left: 10px;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 600px) {
+    .carousel-item {
+      flex: 1 0 100%;
+    }
+  }
+  
+  @media (min-width: 601px) and (max-width: 900px) {
+    .carousel-item {
+      flex: 1 0 50%;
+    }
+  }
+  
+  @media (min-width: 901px) {
+    .carousel-item {
+      flex: 1 0 33.33%;
+    }
+  }  
