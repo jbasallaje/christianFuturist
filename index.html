@@ -1,59 +1,286 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Christian Futurism</title>
-    <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="Images/favicon.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <header>
         <nav>
-            <ul class="nav-left"> 
-                <li><a href="#">Christian Futurism</a></li> 
+            <ul class="nav-left">
+                <li><a href="#christianFuturism">Christian Futurism</a></li>
             </ul>
             <ul class="nav-right">
-                <li><a href="#">Home</a></li> 
-                <li><a href="#">Principles & Arguments</a></li> 
-                <li><a href="#">Conversations</a></li> 
-                <li><a href="#">Featured Projects</a></li> 
-                <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li> 
-                <li><a href="#"><i class="fa-brands fa-discord"></i></a></li> 
+                <li><a href="#">Home</a></li>
+                <li><a href="#principles">Principles & Arguments</a></li>
+                <li><a href="#conversations">Conversations</a></li>
+                <li><a href="#projects">Featured Projects</a></li>
+                <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-discord"></i></a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <section class="hero">
-            <img class="hero img" src="Images/hands.png" alt="Futuristic hands reaching out">
-            <h1>CHRISTIAN FUTURISM</h1>
-            <p>"I am the Alpha and the Omega, the Beginning and the End. I will give of the fountain of the water of life freely to him who thirsts. He who overcomes shall inherit all things, and I will be his God and he shall be My son"</p>
-            <p>— Revelation 21</p>
-            <form>
-                <input type="email" placeholder="Enter your email for updates">
-                <button type="submit">Subscribe</button>
-            </form>
-        </section>
-
-        <div class="centeredSection">
-            <h2 style="text-align: left;">Christian Futurism: Principles & Arguments</h2>
-            <div style="padding: 20px; border: 1px, solid, rgb(76, 130, 83); border-radius: 10px; background-color: rgba(32, 32, 32, 0.285); max-width: 800px;">
-                <blockquote style="font-style: italic; margin: 20px 0;">
-                    "God bless thee, my son; I will give thee the greatest jewel I have.... The end of our foundation is the knowledge of causes, and secret motions of things; and the enlarging of the bounds of human empire, to the effecting of all things possible"
-                    <br><br>
-                    &mdash; Sir. Francis Bacon, The New Atlantis
-                </blockquote>
-                <p>
-                    We envision a future where humanity’s development aligns with God’s cosmic purpose. Rooted in Christian eschatology and inspired by early Christian thinkers, Christian futurism is not an adaptation of secular futurism but a movement that subordinates futuristic visions to Christianity by upholding humanity’s mandate to cultivate the cosmos, harness technology for God’s glory, and direct all aspects of life toward Christ. We espouse an active role for the church in God’s unfolding plan and expect that history’s progression will affirm the truth of Christianity as humanity moves toward unity in Christ and the completion of God’s Kingdom.
-                </p>
+    <section id="christianFuturism" class="hero">
+        <img class="hero img" src="Images/hands.png" alt="Futuristic hands reaching out">
+        <h1>CHRISTIAN FUTURISM</h1>
+        <p>"I am the Alpha and the Omega, the Beginning and the End. I will give of the fountain of the water of
+            life freely to him who thirsts. He who overcomes shall inherit all things, and I will be his God and he
+            shall be My son"</p>
+        <p>— Revelation 21</p>
+        <div class="subWrapper">
+            <div class="center-div">
+                <script src="https://cdn.jsdelivr.net/ghost/signup-form@~0.1/umd/signup-form.min.js"
+                    data-button-color="#28a745" data-button-text-color="#ffffff"
+                    data-site="https://repository.christianfuturist.com" async></script>
             </div>
         </div>
+    </section>
 
-    </main>
+    <div id="principles" class="centeredSection">
+        <h2 style="text-align: left; margin-bottom: 24px;">Christian Futurism: Principles & Arguments</h2>
+        <div
+            style="padding: 20px; border: 1px, solid, rgb(76, 130, 83); border-radius: 10px; background-color: rgba(32, 32, 32, 0.285); max-width: 800px;">
+            <blockquote style="font-style: italic; margin: 20px 0;">
+                "God bless thee, my son; I will give thee the greatest jewel I have.... The end of our foundation is
+                the knowledge of causes, and secret motions of things; and the enlarging of the bounds of human
+                empire, to the effecting of all things possible"
+                <br><br>
+                &mdash; Sir. Francis Bacon, The New Atlantis
+            </blockquote>
+            <p>
+                We envision a future where humanity's development aligns with God's cosmic purpose. Rooted in
+                Christian eschatology and inspired by early Christian thinkers, Christian futurism is not an
+                adaptation of secular futurism but a movement that subordinates futuristic visions to Christianity
+                by upholding humanity's mandate to cultivate the cosmos, harness technology for God's glory, and
+                direct all aspects of life toward Christ. We espouse an active role for the church in God's
+                unfolding plan and expect that history's progression will affirm the truth of Christianity as
+                humanity moves toward unity in Christ and the completion of God's Kingdom.
+            </p>
+        </div>
+    </div>
+
+    <div id="conversations" class="carouselContainer">
+        <h2 style="text-align: center; margin-bottom: 24px;">Christian Futurism Conversations</h2>
+        <div class="carousel-wrapper">
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <div class="carousel">
+                <div class="carousel-track">
+                    <div class="carousel-item">
+                        <a href="https://repository.christianfuturist.com/ai-art-x-christianity/" target="_blank"
+                            rel="noopener noreferrer"><img src="./Images/6.png" alt="AI ART X CHRISTIANITY"></a>
+                        <p>AI ART X CHRISTIANITY</p>
+                        <p>
+                            <i>
+                                Exploring the intersection of divine creativity and
+                                artificial intelligence
+                            </i>
+                        </p>
+                        <p>— 2024.09.17</p>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="https://repository.christianfuturist.com/ai-x-christianity/" target="_blank"
+                            rel="noopener noreferrer"><img src="./Images/5.png" alt="AI X CHRISTIANITY"></a>
+                        <p>AI X CHRISTIANITY</p>
+                        <p>
+                            <i>
+                                Discussing AI in the church and the theological
+                                implications of artificial minds
+                            </i>
+                        </p>
+                        <p>— 2024.08.20</p>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="https://repository.christianfuturist.com/decentralization-x-christianity/"
+                            target="_blank" rel="noopener noreferrer"><img src="./Images/4.png"
+                                alt="DECENTRALIZATION X CHRISTIANITY"></a>
+                        <p>DECENTRALIZATION X CHRISTIANITY</p>
+                        <p>
+                            <i>
+                                Linking the church through decentralized technology
+                            </i>
+                        </p>
+                        <p>— 2024.06.11</p>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="https://repository.christianfuturist.com/builders-x-christianity-x2/" target="_blank"
+                            rel="noopener noreferrer"><img src="./Images/3.png" alt="Builders x Christianity x2"></a>
+                        <p>Builders x Christianity x2</p>
+                        <p>
+                            <i>
+                                Discussing the theologic and Tower
+                            </i>
+                        </p>
+                        <p>— 2024.03.23</p>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="https://repository.christianfuturist.com/builders-x-christianity-x1/" target="_blank"
+                            rel="noopener noreferrer"><img src="./Images/2.png" alt="Builders x Christianity x1"></a>
+                        <p>Builders x Christianity x1</p>
+                        <p>
+                            <i>
+                                Exploring the intersection of divine creativity and
+                                artificial intelligence
+                            </i>
+                        </p>
+                        <p>— 2024.03.03</p>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="https://repository.christianfuturist.com/e-acc-x-christianity/" target="_blank"
+                            rel="noopener noreferrer"><img src="./Images/1.png" alt="e/acc x Christianity"></a>
+                        <p>e/acc x Christianity</p>
+                        <p>
+                            <i>
+                                Exploring the intersection of divine creativity and
+                                artificial intelligence
+                            </i>
+                        </p>
+                        <p>— 2024.01.28</p>
+                    </div>
+                </div>
+            </div>
+            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+    </div>
+
+    <div id="projects" class="projectsContainer">
+        <h2 style="text-align: center; margin-bottom: 24px;">Featured Projects</h2>
+        <p style="text-align: center; margin-bottom: 24px;">
+            <i>
+                These projects from Christian builders align with the christian futurism vision
+                and feature visionary uses of emerging technologies
+            </i>
+        </p>
+        <div class="projectsWrapper">
+            <div class="project-grid">
+                <div class="project-item">
+                    <a href="https://seraph.sapienslaboratories.com/" target="_blank" rel="noopener noreferrer"><img
+                            src="./Images/seraphLogo.png" alt="SERAPHAI"></a>
+                    <div class="overlay">
+                        <p>SERAPHAI</p>
+                        <p>
+                            <i>
+                                Neural networks trained
+                                on centuries of christian
+                                wisdom
+                            </i>
+                        </p>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <a href="https://pulpitai.com/" target="_blank" rel="noopener noreferrer"><img
+                            src="./Images/pulpitLogo.png" alt="PULPIT AI"></a>
+                    <div class="overlay">
+                        <p>PULPIT AI</p>
+                        <p>
+                            <i>
+                                AI for everything after you
+                                preach
+                            </i>
+                        </p>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <a href="https://codexeditor.app/" target="_blank" rel="noopener noreferrer"><img
+                            src="./Images/codex-logo.png" alt="CODEX TRANSLATION EDITOR"></a>
+                    <div class="overlay">
+                        <p>CODEX TRANSLATION EDITOR</p>
+                        <p>
+                            <i>
+                                Empowing translaters
+                                with cutting-edge AI
+                            </i>
+                        </p>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <a href="https://apps.apple.com/us/app/ecclesia-bible/id6503206328" target="_blank"
+                        rel="noopener noreferrer"><img src="./Images/ecclesiaLogo.png" alt="ECCLESIA BIBLE APP"></a>
+                    <div class="overlay">
+                        <p>ECCLESIA BIBLE APP</p>
+                        <p>
+                            <i>
+                                The AI-enhanced Bible
+                                app
+                            </i>
+                        </p>
+                    </div>
+                </div>
+                <!-- <div class="project-item">
+                    <a href="https://apps.apple.com/us/app/ecclesia-bible/id6503206328" target="_blank"
+                        rel="noopener noreferrer"><img src="./Images/ecclesiaLogo.png" alt="ECCLESIA BIBLE APP"></a>
+                    <div class="overlay">
+                        <p>ECCLESIA BIBLE APP</p>
+                        <p>
+                            <i>
+                                The AI-enhanced Bible
+                                app
+                            </i>
+                        </p>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <a href="https://codexeditor.app/" target="_blank" rel="noopener noreferrer"><img
+                            src="./Images/codex-logo.png" alt="CODEX TRANSLATION EDITOR"></a>
+                    <div class="overlay">
+                        <p>CODEX TRANSLATION EDITOR</p>
+                        <p>
+                            <i>
+                                Empowing translaters
+                                with cutting-edge AI
+                            </i>
+                        </p>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <a href="https://pulpitai.com/" target="_blank" rel="noopener noreferrer"><img
+                            src="./Images/pulpitLogo.png" alt="PULPIT AI"></a>
+                    <div class="overlay">
+                        <p>PULPIT AI</p>
+                        <p>
+                            <i>
+                                AI for everything after you
+                                preach
+                            </i>
+                        </p>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <a href="https://seraph.sapienslaboratories.com/" target="_blank" rel="noopener noreferrer"><img
+                            src="./Images/seraphLogo.png" alt="SERAPHAI"></a>
+                    <div class="overlay">
+                        <p>SERAPHAI</p>
+                        <p>
+                            <i>
+                                Neural networks trained
+                                on centuries of christian
+                                wisdom
+                            </i>
+                        </p>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+        <p style="text-align: center; font-size: 24px; margin-top: 100px; margin-bottom: 8px;">The Christian Futurism
+            Collaborative is Growing</p>
+        <p style="text-align: center;">Subscribe to receive updates on coming developments</p>
+        <div class="subWrapper" style="margin-bottom: 100px;">
+            <div class="center-div">
+                <script src="https://cdn.jsdelivr.net/ghost/signup-form@~0.1/umd/signup-form.min.js"
+                    data-button-color="#28a745" data-button-text-color="#ffffff"
+                    data-site="https://repository.christianfuturist.com" async></script>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
+
 </html>

@@ -1,0 +1,355 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    color: #ffffff;
+    margin: 0;
+    background: url('Images/Space_bg.png') no-repeat center center fixed;
+    background-size: cover;
+}
+
+header {
+    background-color: rgba(32, 32, 32, 0.285);
+    padding: 10px 150px;
+}
+
+h2 {
+    font-family: Arial, sans-serif;
+    font-size: 2.5em;
+    font-weight: 100;
+}
+
+.centeredSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+}
+
+/* Nav Styles */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-left,
+.nav-right {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-left li,
+.nav-right li {
+    margin: 0 15px;
+}
+
+.nav-left li a,
+.nav-right li a {
+    color: #ffffff;
+    text-decoration: none;
+    /* font-weight: bold; */
+}
+
+/* Icon Styles */
+
+.nav-right i {
+    font-size: 1.2em;
+}
+
+.nav-right a:hover i {
+    color: #28a745;
+}
+
+/* Hero Section Styles */
+
+.hero {
+    text-align: center;
+    padding: 0px 20px;
+    background: url('grid-background.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.hero img {
+    width: 90%;
+    max-width: 800px;
+    height: auto;
+    padding: 24px;
+}
+
+.hero h1 {
+    font-size: 3.2em;
+    font-family: "Cinzel", serif;
+    margin: 20px 0;
+}
+
+.hero p {
+    max-width: 800px;
+    font-size: 1 em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Subscibe styles */
+
+.subWrapper {
+    display: flex;
+    justify-content: center;
+    /* Center horizontally */
+    align-items: center;
+    /* Center vertically */
+    margin-top: 64px;
+}
+
+/* The div to center */
+.center-div {
+    max-width: 440px;
+    width: 100%;
+    /* Ensure it doesn't exceed max-width */
+}
+
+form {
+    margin-top: 64px;
+}
+
+form input[type="email"] {
+    padding: 10px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    width: 224px;
+}
+
+form .sub-btn {
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    background-color: #28a745;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+form .sub-btn:hover {
+    background-color: #218838;
+}
+
+/* Carousel Styles */
+
+.carouselContainer {
+    margin-top: 100px;
+}
+
+.carousel-wrapper {
+    display: flex;
+    align-items: center;
+    max-width: 1000px;
+    /* width: 100%; */
+}
+
+.carousel {
+    display: flex;
+    overflow: hidden;
+    flex-grow: 1;
+    border-radius: 10px;
+    position: relative;
+    padding: 20px;
+    border: 1px, solid, rgb(76, 130, 83);
+    border-radius: 10px;
+    background-color: rgba(32, 32, 32, 0.285);
+    max-width: 975px;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.3s ease;
+}
+
+.carousel-item {
+    flex: 1 0 100%;
+    padding: 10px;
+    text-align: center;
+    /* background-color: #fff; */
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.carousel-item p {
+    margin-top: 10px;
+    font-size: 1rem;
+}
+
+/* Carousel Navigation buttons */
+
+.prev,
+.next {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* height: 100%; */
+}
+
+.prev,
+.next {
+    flex-shrink: 0;
+    z-index: 10;
+}
+
+.prev {
+    margin-right: 10px;
+}
+
+.next {
+    margin-left: 10px;
+}
+
+/* Project Styles */
+
+.projectsContainer {
+    margin-top: 100px;
+}
+
+.projectsWrapper {
+    border: 1px, solid, rgb(76, 130, 83);
+    border-radius: 10px;
+    background-color: rgba(32, 32, 32, 0.285);
+    max-width: 975px;
+}
+
+/* Project Grid */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* Start with 4 items in a row */
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+    max-width: 800px;
+    /* Set max-width to 800px */
+    margin: 0 auto;
+    /* Center the grid */
+}
+
+/* Project Item */
+.project-item {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #fff;
+    max-width: 160px;
+    max-height: 160px;
+}
+
+/* Project Image */
+.project-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Overlay */
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    /* Half of the image */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Semi-transparent background */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    pointer-events: none;
+}
+
+.overlay p {
+    font-size: 12px;
+}
+
+/* Media Queries */
+@media (max-width: 600px) {
+    .carousel-item {
+        flex: 1 0 100%;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+    .carousel-item {
+        flex: 1 0 50%;
+    }
+}
+
+@media (min-width: 901px) {
+    .carousel-item {
+        flex: 1 0 33.33%;
+    }
+}
+
+@media (max-width: 768px) {
+    .project-grid {
+        grid-template-columns: repeat(3, 1fr);
+        /* 3 items per row */
+    }
+
+    .overlay p {
+        font-size: 1rem;
+        /* Adjust font size on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .project-grid {
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 items per row */
+    }
+
+    .overlay p {
+        font-size: 0.9rem;
+        /* Further reduce font size for very small screens */
+    }
+}
+
+@media (max-width: 320px) {
+    .project-grid {
+        grid-template-columns: 1fr;
+        /* 1 item per row */
+    }
+
+    .overlay p {
+        font-size: 0.8rem;
+        /* Smaller font size for very narrow screens */
+    }
+}
