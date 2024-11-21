@@ -20,7 +20,6 @@ body {
 }
 
 header {
-    /* background-color: rgba(16, 16, 16, 0.285); */
     background-color: rgba(16, 16, 16, 0.591);
     padding: 10px 150px;
     width: 100%;
@@ -28,7 +27,7 @@ header {
 }
 
 h2 {
-    font-family: Arial, sans-serif;
+    font-family: "Roboto Slab", serif;
     font-size: 2.5em;
     font-weight: 100;
 }
@@ -39,6 +38,29 @@ h2 {
     align-items: center;
     margin-top: 100px;
 }
+
+.basicButton {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 44px;
+    width: 112px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+    border: 1px solid rgb(76, 130, 83);
+    border-radius: 10px;
+    background-color: rgba(32, 32, 32, 0.8);
+    margin-top: 24px;
+    cursor: pointer;
+}
+
+.basicButton:hover {
+    background-color: rgba(32, 32, 32, 1);
+}
+
 
 /* Nav Styles */
 
