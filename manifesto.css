@@ -1,0 +1,118 @@
+/* General Styles */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0a0f0f;
+    background: url('Images/Space_bg.png') no-repeat center center fixed;
+    background-size: cover;
+    color: #ffffff;
+}
+
+header {
+    background-color: rgba(32, 32, 32, 0.285);
+    padding: 10px 150px;
+}
+
+h2{
+    font-family: Arial, sans-serif;
+    font-size: 2.5em;
+    font-weight: 100;
+}
+
+.centeredSection{
+    display:flex;
+	flex-direction: column;
+	align-items: center;
+    margin-top: 100px;
+}
+
+/* Nav Styles */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-left, .nav-right {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-left li, .nav-right li {
+    margin: 0 15px;
+}
+
+.nav-left li a, .nav-right li a {
+    color: #ffffff;
+    text-decoration: none;
+    /* font-weight: bold; */
+}
+
+/* Icon Styles */
+
+.nav-right i {
+    font-size: 1.2em;
+}
+
+.nav-right a:hover i {
+    color: #28a745;
+}
+
+/* Hero Section Styles */
+
+.hero {
+    text-align: center;
+    padding: 0px 20px;
+    background: url('grid-background.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.hero img {
+    width: 90%;
+    max-width: 800px;
+    height: auto;
+    padding: 24px;
+}
+
+.hero h1 {
+    font-size: 3.2em;
+    font-family: "Cinzel", serif;
+    margin: 20px 0;
+}
+
+.hero p {
+    max-width: 800px;
+    font-size: 1 em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+form {
+    margin-top: 64px;
+}
+
+form input[type="email"] {
+    padding: 10px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+form button {
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    background-color: #28a745;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #218838;
+}

@@ -122,33 +122,6 @@ nav {
     /* Ensure it doesn't exceed max-width */
 }
 
-form {
-    margin-top: 64px;
-}
-
-form input[type="email"] {
-    padding: 10px;
-    font-size: 1em;
-    border: none;
-    border-radius: 5px;
-    margin-right: 10px;
-    width: 224px;
-}
-
-form .sub-btn {
-    padding: 10px 20px;
-    font-size: 1em;
-    border: none;
-    border-radius: 5px;
-    background-color: #28a745;
-    color: #ffffff;
-    cursor: pointer;
-}
-
-form .sub-btn:hover {
-    background-color: #218838;
-}
-
 /* Carousel Styles */
 
 .carouselContainer {
