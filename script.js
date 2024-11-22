@@ -34,7 +34,7 @@ function calculateVisibleItems() {
 function moveSlide(direction) {
   const items = document.querySelectorAll('.carousel-item');
   const carouselTrack = document.querySelector('.carousel-track');
-  
+
   currentIndex += direction;
 
   // Loop back to the first item after reaching the last item
@@ -58,3 +58,21 @@ function updateCarouselPosition() {
 }
 
 document.addEventListener('DOMContentLoaded', initCarousel);
+
+let slideIndex = 0;
+function showSlides() {
+  const slides = document.querySelectorAll('.carousel-item-mobile');
+  slides.forEach((slide, index) => { slide.style.transform = `translateX(${-slideIndex * 100}%)`; });
+}
+function nextSlide() {
+  const slides = document.querySelectorAll('.carousel-item-mobile');
+  slideIndex = (slideIndex + 1) % slides.length;
+  showSlides();
+}
+function prevSlide() {
+  const slides = document.querySelectorAll('.carousel-item-mobile');
+  slideIndex = (slideIndex - 1 + slides.length) % slides.length;
+  showSlides();
+
+}
+document.addEventListener('DOMContentLoaded', showSlides);
