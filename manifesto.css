@@ -27,7 +27,8 @@ h2 {
     border: 1px, solid, rgb(76, 130, 83);
     border-radius: 10px;
     background-color: rgba(32, 32, 32, 0.285);
-    max-width: 800px;}
+    max-width: 80%;
+}
 
 .centeredSection {
     display: flex;
@@ -172,8 +173,8 @@ form button:hover {
     background-color: #218838;
 }
 
-@media (max-width: 800px) {
+/* @media (max-width: 500px) {
     .textContainer {
-        max-width: 380px;
+        max-width: 300px;
     }
-}
+} */
