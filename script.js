@@ -34,7 +34,7 @@ function calculateVisibleItems() {
 function moveSlide(direction) {
   const items = document.querySelectorAll('.carousel-item');
   const carouselTrack = document.querySelector('.carousel-track');
-  
+
   currentIndex += direction;
 
   // Loop back to the first item after reaching the last item
@@ -58,3 +58,70 @@ function updateCarouselPosition() {
 }
 
 document.addEventListener('DOMContentLoaded', initCarousel);
+
+let slideIndex = 0;
+function showSlides() {
+  const slides = document.querySelectorAll('.carousel-item-mobile');
+  slides.forEach((slide, index) => { slide.style.transform = `translateX(${-slideIndex * 100}%)`; });
+}
+function nextSlide() {
+  const slides = document.querySelectorAll('.carousel-item-mobile');
+  slideIndex = (slideIndex + 1) % slides.length;
+  showSlides();
+}
+function prevSlide() {
+  const slides = document.querySelectorAll('.carousel-item-mobile');
+  slideIndex = (slideIndex - 1 + slides.length) % slides.length;
+  showSlides();
+
+}
+document.addEventListener('DOMContentLoaded', showSlides);
+
+document.addEventListener('DOMContentLoaded', () => {
+  const menuToggle = document.getElementById('menu-toggle');
+  const navRight = document.getElementById('nav-right');
+  const toggleMenu = () => {
+    navRight.classList.toggle('active');
+  };
+  const closeMenu = (event) => {
+    if (!navRight.contains(event.target) && !menuToggle.contains(event.target)) {
+      navRight.classList.remove('active');
+    }
+  };
+  menuToggle.addEventListener('click', toggleMenu);
+  document.addEventListener('click', closeMenu); // Close the menu when a menu item is clicked 
+  const menuItems = navRight.querySelectorAll('a');
+  menuItems.forEach(item => {
+    item.addEventListener('click', () => {
+      navRight.classList.remove('active');
+    });
+  });
+});
+
+function scrollToVisibleSection() {
+  const menuToggle = document.getElementById('menu-toggle');
+  const navRight = document.getElementById('nav-right');
+  const closeMenu = (event) => {
+    if (!menuToggle.contains(event.target)) {
+      navRight.classList.remove('active');
+    }
+  };
+
+  const desktopSection = document.getElementById('conversations-desktop');
+  const mobileSection = document.getElementById('conversations-mobile');
+
+  if (window.getComputedStyle(desktopSection).display !== 'none') {
+    desktopSection.scrollIntoView({ behavior: 'auto' });
+  } else if (window.getComputedStyle(mobileSection).display !== 'none') {
+    mobileSection.scrollIntoView({ behavior: 'auto' });
+  }
+
+  document.addEventListener('click', closeMenu);
+}
+
+// Check for URL parameter and scroll to the correct section 
+const urlParams = new URLSearchParams(window.location.search);
+const section = urlParams.get('section');
+if (section === 'conversations') {
+  scrollToVisibleSection();
+}
