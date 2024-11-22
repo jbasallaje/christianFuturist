@@ -10,12 +10,14 @@ body {
 }
 
 header {
-    background-color: rgba(32, 32, 32, 0.285);
-    padding: 10px 150px;
+    background-color: rgba(16, 16, 16, 0.591);
+    padding: 10px;
+    width: 100%;
+    position: fixed;
 }
 
 h2{
-    font-family: Arial, sans-serif;
+    font-family: "Roboto Slab", serif;
     font-size: 2.5em;
     font-weight: 100;
 }
@@ -24,7 +26,6 @@ h2{
     display:flex;
 	flex-direction: column;
 	align-items: center;
-    margin-top: 100px;
 }
 
 /* Nav Styles */
@@ -33,6 +34,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 150px;
 }
 
 .nav-left, .nav-right {
@@ -50,6 +52,17 @@ nav {
     color: #ffffff;
     text-decoration: none;
     /* font-weight: bold; */
+}
+
+
+/* Icon Styles */
+
+.nav-right i {
+    font-size: 1.2em;
+}
+
+.nav-right a:hover i {
+    color: #28a745;
 }
 
 /* Icon Styles */
