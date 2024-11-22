@@ -25,7 +25,7 @@
             <ul class="nav-right" id="nav-right">
                 <li><a href="#">Home</a></li>
                 <li><a href="#principles">Principles & Arguments</a></li>
-                <li><a href="#conversations">Conversations</a></li>
+                <li class="conversationsMenuItem" onclick="scrollToVisibleSection()">Conversations</li>
                 <li><a href="#projects">Featured Projects</a></li>
                 <li><a href="https://x.com/CConnorMahoney" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
                 </li>
@@ -74,7 +74,7 @@
         </div>
     </div>
 
-    <div class="carousel-container-mobile" id="conversations">
+    <div class="carousel-container-mobile" id="conversations-mobile">
         <h2 style="text-align: center; margin-bottom: 24px;">Christian Futurism Conversations</h2>
         <div class="carousel-mobile">
             <div class="carousel-item-mobile">
@@ -152,7 +152,7 @@
         <button class="next-mobile" onclick="nextSlide()">&#10095;</button>
     </div>
 
-    <div id="conversations" class="carouselContainer">
+    <div id="conversations-desktop" class="carouselContainer">
         <h2 style="text-align: center; margin-bottom: 24px;">Christian Futurism Conversations</h2>
         <div class="carousel-wrapper">
             <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
@@ -298,59 +298,6 @@
                         </p>
                     </div>
                 </div>
-                <!-- <div class="project-item">
-                    <a href="https://apps.apple.com/us/app/ecclesia-bible/id6503206328" target="_blank"
-                        rel="noopener noreferrer"><img src="./Images/ecclesiaLogo.png" alt="ECCLESIA BIBLE APP"></a>
-                    <div class="overlay">
-                        <p>ECCLESIA BIBLE APP</p>
-                        <p>
-                            <i>
-                                The AI-enhanced Bible
-                                app
-                            </i>
-                        </p>
-                    </div>
-                </div>
-                <div class="project-item">
-                    <a href="https://codexeditor.app/" target="_blank" rel="noopener noreferrer"><img
-                            src="./Images/codex-logo.png" alt="CODEX TRANSLATION EDITOR"></a>
-                    <div class="overlay">
-                        <p>CODEX TRANSLATION EDITOR</p>
-                        <p>
-                            <i>
-                                Empowing translaters
-                                with cutting-edge AI
-                            </i>
-                        </p>
-                    </div>
-                </div>
-                <div class="project-item">
-                    <a href="https://pulpitai.com/" target="_blank" rel="noopener noreferrer"><img
-                            src="./Images/pulpitLogo.png" alt="PULPIT AI"></a>
-                    <div class="overlay">
-                        <p>PULPIT AI</p>
-                        <p>
-                            <i>
-                                AI for everything after you
-                                preach
-                            </i>
-                        </p>
-                    </div>
-                </div>
-                <div class="project-item">
-                    <a href="https://seraph.sapienslaboratories.com/" target="_blank" rel="noopener noreferrer"><img
-                            src="./Images/seraphLogo.png" alt="SERAPHAI"></a>
-                    <div class="overlay">
-                        <p>SERAPHAI</p>
-                        <p>
-                            <i>
-                                Neural networks trained
-                                on centuries of christian
-                                wisdom
-                            </i>
-                        </p>
-                    </div>
-                </div> -->
             </div>
         </div>
         <p style="text-align: center; font-size: 24px; margin-top: 100px; margin-bottom: 8px;">The Christian Futurism

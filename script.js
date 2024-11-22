@@ -84,7 +84,9 @@ document.addEventListener('DOMContentLoaded', () => {
     navRight.classList.toggle('active');
   };
   const closeMenu = (event) => {
-    if (!navRight.contains(event.target) && !menuToggle.contains(event.target)) { navRight.classList.remove('active'); }
+    if (!navRight.contains(event.target) && !menuToggle.contains(event.target)) {
+      navRight.classList.remove('active');
+    }
   };
   menuToggle.addEventListener('click', toggleMenu);
   document.addEventListener('click', closeMenu); // Close the menu when a menu item is clicked 
@@ -95,3 +97,31 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
+
+function scrollToVisibleSection() {
+  const menuToggle = document.getElementById('menu-toggle');
+  const navRight = document.getElementById('nav-right');
+  const closeMenu = (event) => {
+    if (!menuToggle.contains(event.target)) {
+      navRight.classList.remove('active');
+    }
+  };
+
+  const desktopSection = document.getElementById('conversations-desktop');
+  const mobileSection = document.getElementById('conversations-mobile');
+
+  if (window.getComputedStyle(desktopSection).display !== 'none') {
+    desktopSection.scrollIntoView({ behavior: 'auto' });
+  } else if (window.getComputedStyle(mobileSection).display !== 'none') {
+    mobileSection.scrollIntoView({ behavior: 'auto' });
+  }
+
+  document.addEventListener('click', closeMenu);
+}
+
+// Check for URL parameter and scroll to the correct section 
+const urlParams = new URLSearchParams(window.location.search);
+const section = urlParams.get('section');
+if (section === 'conversations') {
+  scrollToVisibleSection();
+}
