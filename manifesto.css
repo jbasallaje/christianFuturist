@@ -16,16 +16,16 @@ header {
     position: fixed;
 }
 
-h2{
+h2 {
     font-family: "Roboto Slab", serif;
     font-size: 2.5em;
     font-weight: 100;
 }
 
-.centeredSection{
-    display:flex;
-	flex-direction: column;
-	align-items: center;
+.centeredSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* Nav Styles */
@@ -37,23 +37,58 @@ nav {
     padding: 0 150px;
 }
 
-.nav-left, .nav-right {
+.nav-left,
+.nav-right {
     list-style: none;
     display: flex;
     margin: 0;
     padding: 0;
 }
 
-.nav-left li, .nav-right li {
+.nav-left li,
+.nav-right li {
     margin: 0 15px;
 }
 
-.nav-left li a, .nav-right li a {
+.nav-left li a,
+.nav-right li a {
     color: #ffffff;
     text-decoration: none;
     /* font-weight: bold; */
 }
 
+/* Responsive styles */
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    font-size: 1.5em;
+    color: #ffffff;
+}
+
+@media (max-width: 1120px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-right {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #333;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-right.active {
+        display: flex;
+    }
+
+    .nav-right li {
+        margin: 15px 0;
+    }
+}
 
 /* Icon Styles */
 

@@ -76,3 +76,22 @@ function prevSlide() {
 
 }
 document.addEventListener('DOMContentLoaded', showSlides);
+
+document.addEventListener('DOMContentLoaded', () => {
+  const menuToggle = document.getElementById('menu-toggle');
+  const navRight = document.getElementById('nav-right');
+  const toggleMenu = () => {
+    navRight.classList.toggle('active');
+  };
+  const closeMenu = (event) => {
+    if (!navRight.contains(event.target) && !menuToggle.contains(event.target)) { navRight.classList.remove('active'); }
+  };
+  menuToggle.addEventListener('click', toggleMenu);
+  document.addEventListener('click', closeMenu); // Close the menu when a menu item is clicked 
+  const menuItems = navRight.querySelectorAll('a');
+  menuItems.forEach(item => {
+    item.addEventListener('click', () => {
+      navRight.classList.remove('active');
+    });
+  });
+});

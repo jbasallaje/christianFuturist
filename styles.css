@@ -24,6 +24,7 @@ header {
     padding: 10px 150px;
     width: 100%;
     position: fixed;
+    z-index: 1;
 }
 
 h2 {
@@ -87,10 +88,7 @@ nav {
 .nav-right li a {
     color: #ffffff;
     text-decoration: none;
-    /* font-weight: bold; */
 }
-
-/* Icon Styles */
 
 .nav-right i {
     font-size: 1.2em;
@@ -98,6 +96,39 @@ nav {
 
 .nav-right a:hover i {
     color: #28a745;
+}
+
+/* Responsive styles */
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    font-size: 1.5em;
+    color: #ffffff;
+}
+
+@media (max-width: 1120px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-right {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #333;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-right.active {
+        display: flex;
+    }
+
+    .nav-right li {
+        margin: 15px 0;
+    }
 }
 
 /* Hero Section Styles */
@@ -357,8 +388,8 @@ nav {
     right: 0;
 }
 
-    /* Media Queries */
-    /* @media (max-width: 600px) {
+/* Media Queries */
+/* @media (max-width: 600px) {
     .carousel-item {
         flex: 1 0 100%;
     }
@@ -370,40 +401,40 @@ nav {
     }
 } */
 
-    @media (min-width: 901px) {
-        .carousel-item {
-            flex: 1 0 33.33%;
-        }
+@media (min-width: 901px) {
+    .carousel-item {
+        flex: 1 0 33.33%;
+    }
 
-        /* .carousel-item img {
+    /* .carousel-item img {
         height: auto;
         width: 240px;
     } */
+}
+
+@media (max-width: 900px) {
+    .carousel-item img {
+        width: 50%;
     }
 
-    @media (max-width: 900px) {
-        .carousel-item img {
-            width: 50%;
-        }
-
-        .carousel-item {
-            padding: 0;
-        }
-
-        .carousel {
-            padding-left: 0;
-            max-width: 632px;
-        }
+    .carousel-item {
+        padding: 0;
     }
 
-    @media (max-width: 740px) {
-        .carouselContainer {
-            display: none;
-        }
+    .carousel {
+        padding-left: 0;
+        max-width: 632px;
     }
+}
 
-    /* OLD carousel styles */
-    /* @media (max-width: 784px) {
+@media (max-width: 740px) {
+    .carouselContainer {
+        display: none;
+    }
+}
+
+/* OLD carousel styles */
+/* @media (max-width: 784px) {
     .carousel-item img {
         width: 45%;
     }
@@ -417,40 +448,40 @@ nav {
         max-width: 550px;
     }
 } */
-    /* OLD carousel styles */
+/* OLD carousel styles */
 
-    @media (max-width: 768px) {
-        .project-grid {
-            grid-template-columns: repeat(3, 1fr);
-            /* 3 items per row */
-        }
-
-        .overlay p {
-            font-size: 1rem;
-            /* Adjust font size on smaller screens */
-        }
+@media (max-width: 768px) {
+    .project-grid {
+        grid-template-columns: repeat(3, 1fr);
+        /* 3 items per row */
     }
 
-    @media (max-width: 480px) {
-        .project-grid {
-            grid-template-columns: repeat(2, 1fr);
-            /* 2 items per row */
-        }
+    .overlay p {
+        font-size: 1rem;
+        /* Adjust font size on smaller screens */
+    }
+}
 
-        .overlay p {
-            font-size: 0.9rem;
-            /* Further reduce font size for very small screens */
-        }
+@media (max-width: 480px) {
+    .project-grid {
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 items per row */
     }
 
-    @media (max-width: 320px) {
-        .project-grid {
-            grid-template-columns: 1fr;
-            /* 1 item per row */
-        }
-
-        .overlay p {
-            font-size: 0.8rem;
-            /* Smaller font size for very narrow screens */
-        }
+    .overlay p {
+        font-size: 0.9rem;
+        /* Further reduce font size for very small screens */
     }
+}
+
+@media (max-width: 320px) {
+    .project-grid {
+        grid-template-columns: 1fr;
+        /* 1 item per row */
+    }
+
+    .overlay p {
+        font-size: 0.8rem;
+        /* Smaller font size for very narrow screens */
+    }
+}
